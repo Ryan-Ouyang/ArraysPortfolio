@@ -1,0 +1,50 @@
+doctype
+html
+head
+  title Arrays | Cleaner development, closer interactions.
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='description', content='Creative agency in Toronto focused on building interactive solutions that follow industry trends.')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(href='style/main.css', rel='stylesheet')
+  link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
+  link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+body
+  //Image background using undervalued z-index div. 
+  .landingheadimages
+    img.rightHeaderImage(src='images/landingHeader/purpleright.svg')
+    img.leftHeaderImage(src='images/landingHeader/orangeleft.svg')
+  //Header section using overvalued z-index div absolutley positioned above the images.
+  .landinghead
+    .header
+      .leftHeader
+        .logoImg
+          h3 Arrays
+        .sideTextDiv
+          p | Creative Agency in Toronto.
+      .rightHeader
+        ul.menu
+          li
+            a(href='index.html') Home
+          li
+            a(href='#') About
+          li
+            a(href='#') Services
+          li
+            a(href='#') Quote
+          li
+            a.contactbutton(href='#') Contact Us
+    .middleSection.col-lg-12
+      .col-lg-6.col-lg-offset-1.alignmentMiddleSection
+        h5 INNOVATIVE SOLUTIONS FOR THE COMPANIES OF THE FUTURE
+        h1 
+          | Taking companies from 
+          strong out where, 
+          | to 
+          strong out there.
+        form(method='POST' action='#')
+          input#email.form-control(type='email', placeholder='Let us send you our pitch.' name='email')
+          input#send(type="submit" value=">")
+      .col-lg-11.col-lg-offset-1.sectionOfCards
+        p test
+    
