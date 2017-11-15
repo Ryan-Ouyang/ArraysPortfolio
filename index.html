@@ -9,6 +9,7 @@
   <link href="style/main.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
 </head>
 <body>
   <!--Image background using undervalued z-index div. -->
@@ -18,19 +19,19 @@
     <div class="header">
       <div class="leftHeader">
         <div class="logoImg">
-          <h3>Arrays</h3>
+          <h3 class="wow animated fadeIn">Arrays</h3>
         </div>
         <div class="sideTextDiv">
-          <p>| Creative Agency in Toronto.</p>
+          <p class="wow animated fadeIn" data-wow-delay="1s">| Creative Agency in Toronto.</p>
         </div>
       </div>
       <div class="rightHeader">
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Quote</a></li>
-          <li><a class="contactbutton" href="#">Contact Us</a></li>
+          <li class="wow fadeIn" data-wow-delay="0.2s"><a href="index.html">Home</a></li>
+          <li class="wow fadeIn" data-wow-delay="0.4s"><a href="#">About</a></li>
+          <li class="wow fadeIn" data-wow-delay="0.6s"><a href="#">Services</a></li>
+          <li class="wow fadeIn" data-wow-delay="0.8s"><a href="#">Quote</a></li>
+          <li class="wow fadeIn" data-wow-delay="1s"><a class="contactbutton" href="#">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -44,9 +45,37 @@
           <input id="send" type="submit" value="&gt;">
         </form>
       </div>
-      <div class="col-lg-11 col-lg-offset-1 sectionOfCards">
-        <p>test</p>
+      <div class="col-lg-5 sectionOfCards">
+        <div class="card"><img src="images/logos/shopify2.svg">
+          <hr>
+          <h4>Shopify</h4>
+          <h5>Partner Developers Program</h5>
+          <p>Being part of the Shopify Partner Developers program, we're given a greater insight into the development of our clients sites. Through the program, we are able to provide swift solutions to our clients demands.</p>
+          <div class="savingsSection">
+            <div class="priceSaved">
+              <h2>$1710</h2>
+              <p>saved and counting.</p>
+            </div>
+            <div class="buttonSection"><a href="http://namecheap.com"> <i class="fa fa-paper-plane"></i></a></div>
+          </div>
+        </div>
+        <div class="card floatunder"><img src="images/logos/namecheap.svg">
+          <hr>
+          <h4>Namecheap</h4>
+          <h5>Reseller Partner Program</h5>
+          <p>Forming partnerships with the largest domain and hosting providers in the world enables us to provide effective bundled pricing for our clients. </p>
+          <div class="savingsSection">
+            <div class="priceSaved">
+              <h2>$1340</h2>
+              <p>saved and counting.</p>
+            </div>
+            <div class="buttonSection"><a href="#"> <i class="fa fa-paper-plane"></i></a></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </body>
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
