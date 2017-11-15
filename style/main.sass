@@ -199,6 +199,7 @@
 
                 a:hover 
                     background-color: #4839e6
+                    border: 1px solid #4839e6
 
                     i 
                         color: #fefefe
@@ -206,9 +207,113 @@
     margin-left: -30%
     z-index: -25
 
+.nextSection
+    width: 100vw
+    height: 50vh
+    position: relative
+
+.imageSection
+    z-index: -1
+.leftHeaderRotatedImage
+    width: 53%
+    position: absolute
+    transform: scaley(-1)
+    top: 0
+    left: 0
+    margin-top: -1%
+
+.imageAboutSection
+    height: 50vh
+    text-align: center
+    img 
+        float: right
+        border-radius: 5px
+        border: 5px solid #fefefe
+        box-shadow: 0px 0px 45px 2px rgba(0,0,0,0.45)
+.aboutSection
+    text-align: right
+
+    h1 
+        padding-right: 3.5vw
+
+    h5 
+        padding-right: 3.5vw
+
+    p 
+        padding-right: 3.5vw
+
+.stackSection
+    margin-top: 3%
+    text-align: center
+    h5 
+        color: #B8B8BC
+
+.stackCardsSection
+    text-align: center
+
+.stackCard
+    width: 300px
+    background-color: #fefefe
+    height: 340px
+    text-align: left
+    border-radius: 2.7px
+    box-shadow: 0px 0px 45px 2px rgba(0,0,0,0.35)
+    display: inline-block
+    margin-right: 10px
+    margin-bottom: 20px
+    
+    .stackHeader
+        margin-top: 5%
+        text-align: center
+
+        h4  
+            color: #5A6FD9
+
+        p 
+            padding-left: 7.5%
+            padding-right: 7.5%
+
+    .lang 
+        width: 100%
+        padding-left: 10%
+        padding-top: 3%
+
+        i 
+            float: left
+            font-size: 25px
+        
+        p 
+            float: left
+            padding-left: 10%
+            font-size: 17px
+
+    .lang:hover
+        background-color: #5a6FD9 
+
+        i 
+            color: #fefefe
+
+        p  
+            color: #fefefe
+
+.quoteButton 
+    border: 1px solid #5a6FD9 
+    background-color: #5a6FD9 
+    border-radius: 30px 
+    color: #ffffff
+    text-decoration: none
+    padding-top: 5px
+    padding-bottom: 5px
+    padding-right: 10px
+    padding-left: 10px
+    margin-left: 30%
+
+.quoteButton:hover
+    color: #ffffff
+    text-decoration: none
+    background-color: #665cd6
+
 @media screen and (max-width: 1250px)
     .sectionOfCards
         display: none
-
-
 
