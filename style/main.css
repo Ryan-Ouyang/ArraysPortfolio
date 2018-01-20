@@ -242,7 +242,7 @@
 #BTCTicker {
   position: absolute;
   top: -120px;
-  right: -670px;
+  right: -870px;
   height: 160px; }
 
 #ETHTicker {
@@ -262,3 +262,6 @@
   top: 200px;
   right: -650px;
   height: 160px; }
+
+.body {
+  background-color: #FEFEFE; }
