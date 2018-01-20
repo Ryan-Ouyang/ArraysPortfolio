@@ -1,7 +1,7 @@
 doctype
 html
 head
-  title Arrays | Cleaner development, closer interactions.
+  title VimFolio | Trade at the speed of light.
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name='description', content='Creative agency in Toronto focused on building interactive solutions that follow industry trends.')
@@ -21,32 +21,33 @@ body
     .header
       .leftHeader
         .logoImg.wow.fadeIn(data-wow-delay='0.2s')
-          h3 Arrays
+          h3 <i class="fa fa-pie-chart"></i> VimFolio
         .sideTextDiv.wow.fadeIn(data-wow-delay='0.4s')
-          p | Creative Agency in Toronto.
+          p | Trade at the speed of light.
       .rightHeader
         ul.menu
-          li.wow.fadeIn(data-wow-delay="0.2s")
-            a(href='index.html') Home
-          li.wow.fadeIn(data-wow-delay="0.4s")
-            a(href='#about') About
-          li.wow.fadeIn(data-wow-delay="0.6s")
-            a(href='#') Services
-          li.wow.fadeIn(data-wow-delay="0.8s")
-            a(href='#') Quote
+          //- li.wow.fadeIn(data-wow-delay="0.2s")
+          //-   a(href='index.html') Home
+          //- li.wow.fadeIn(data-wow-delay="0.4s")
+          //-   a(href='#about') About
+          //- li.wow.fadeIn(data-wow-delay="0.6s")
+          //-   a(href='#') Services
+          //- li.wow.fadeIn(data-wow-delay="0.8s")
+          //-   a(href='#') Quote
           li.wow.fadeIn(data-wow-delay="1s")
-            a.contactbutton(href='#') Contact Us
+            a.contactbutton(href='#') Login / Sign Up
     .middleSection.col-lg-12
       .col-lg-6.col-lg-offset-1.alignmentMiddleSection
-        h5.wow.fadeIn(data-wow-delay="0.1s") INNOVATIVE SOLUTIONS FOR THE COMPANIES OF THE FUTURE
-        h1.wow.fadeIn(data-wow-delay="0.3s")
-          | Taking companies from 
-          strong out where, 
-          | to 
-          strong out there.
-        form(method='POST' action='#').wow.fadeIn(data-wow-delay="0.5s")
-          input#email.form-control(type='email', placeholder='Let us send you our pitch.' name='email')
-          input#send(type="submit" value=">")
+        //- h5.wow.fadeIn(data-wow-delay="0.1s") INNOVATIVE SOLUTIONS FOR THE COMPANIES OF THE FUTURE
+        h1#mainText.wow.fadeIn(data-wow-delay="0.3s")
+          | Make calls. 
+          strong Make money.
+          //- | to 
+          //- strong out there.
+        //- form(method='POST' action='#').wow.fadeIn(data-wow-delay="0.5s")
+        //-   input#email.form-control(type='email', placeholder='Let us send you our pitch.' name='email')
+        //-   input#send(type="submit" value=">")
+        button#mainButton
       .col-lg-5.sectionOfCards
         .card.wow.fadeIn
           img(src='images/logos/shopify2.svg')
@@ -157,3 +158,4 @@ body
 script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
 script(src='js/main.js')
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+script(src='js/button.js')
