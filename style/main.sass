@@ -6,7 +6,7 @@
 .landingheadimages
     height: 100vh
     width: 100vw
-    background-color: #fefefe
+    // background-color: #fefefe
     position: relative
     z-index: -1
 .landinghead
@@ -15,6 +15,18 @@
     position: absolute
     top: 0
     right: 0
+
+.backgroundDiv
+    z-index: -2
+    position: absolute
+    width: 100%
+    height: 110%
+    top: -100px
+    // background-color: #FEFEFE
+    transform: skewY(-3deg)
+
+    background-image: linear-gradient(#FFFFFF, #E0E0E0)
+
 .rightHeaderImage
     width: 50%
     position: absolute
@@ -76,7 +88,7 @@
             
             .contactbutton
                 border: 1px solid #ffffff
-                border-radius: 25px
+                border-radius: 25px 0px 0px 25px
                 padding-top: 10px
                 padding-bottom: 10px
                 margin-top: 3px
@@ -85,8 +97,20 @@
             .contactbutton:hover 
                 text-decoration: none
                 background-color: #665cd6
+
+            .contactbutton2
+                border: 1px solid #ffffff
+                border-radius: 0px 25px 25px 0px
+                padding-top: 10px
+                padding-bottom: 10px
+                margin-top: 3px
+                // margin-left: 10px
+
+            .contactbutton2:hover 
+                text-decoration: none
+                background-color: #665cd6
 .alignmentMiddleSection
-    margin-top: 21vh
+    margin-top: 18vh
     h5 
         color: #B8B8BC
     h1
@@ -333,6 +357,7 @@
 
 #mainSubtext
     color: #484C63
+    padding-right: 10%
 
 #BTCTicker
     position: absolute

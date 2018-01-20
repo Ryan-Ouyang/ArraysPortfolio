@@ -10,10 +10,12 @@ head
   link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
   link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css' rel='stylesheet')
   link(href='https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css' rel='stylesheet')
-  link(href='style/jelly.css', rel='stylesheet')
+  link(href='style/button.css', rel='stylesheet')
   link(href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet')
   link(href='style/main.css', rel='stylesheet')
 body
+
+  .backgroundDiv
   //Image background using undervalued z-index div. 
   .landingheadimages
     img.rightHeaderImage(src='images/landingHeader/guitarPick.svg')
@@ -24,9 +26,9 @@ body
     .header
       .leftHeader
         .logoImg.wow.fadeIn(data-wow-delay='0.2s')
-          h3 <i class="fa fa-pie-chart"></i> VimFolio
+          h3 <i class="fa fa-pie-chart"></i> Crybl
         .sideTextDiv.wow.fadeIn(data-wow-delay='0.4s')
-          p | Trade at the speed of light.
+          p | Compete and trade at the speed of light.
       .rightHeader
         ul.menu
           //- li.wow.fadeIn(data-wow-delay="0.2s")
@@ -38,7 +40,9 @@ body
           //- li.wow.fadeIn(data-wow-delay="0.8s")
           //-   a(href='#') Quote
           li.wow.fadeIn(data-wow-delay="1s")
-            a.contactbutton(href='#') Login / Sign Up
+            a.contactbutton(href='#') Login
+          li.wow.fadeIn(data-wow-delay="1s")
+            a.contactbutton2(href='#') Sign Up
     .middleSection.col-lg-12
       .col-lg-6.col-lg-offset-1.alignmentMiddleSection
         //- h5.wow.fadeIn(data-wow-delay="0.1s") INNOVATIVE SOLUTIONS FOR THE COMPANIES OF THE FUTURE
@@ -46,15 +50,18 @@ body
           | Make calls. 
           strong Make money.
         h2#mainSubtext.wow.fadeIn(data-wow-delay="0.4s")
-          | This is some filler text that doesn't make sense! Please do not read this because I am literally ESL and someone else needs to write this section not me please please please bootstrap save me
+          | Crybl is a beautiful social trading platform for the currencies from the future. Monitor your portfolio, compete with your friends, and track crypto trends all from a streamlined interface.
+          
           .buttonContainer
-            button.bttn-jelly.bttn-md#mainButton(href='#') Try it Yourself.
+            .favic
+                fa.fa.fa-arrow-right
+            button(href='#') Get started.
                 
 
         img#BTCTicker.wow.fadeIn(data-wow-delay="0.1s")(src='images/tickers/BTC ticker.svg')
         img#ETHTicker.wow.fadeIn(data-wow-delay="0.15s")(src='images/tickers/ETH ticker.svg')
-        img#NEOTicker.wow.fadeIn(data-wow-delay="0.2s")(src='images/tickers/NEO ticker.svg')
-        img#FUNTicker.wow.fadeIn(data-wow-delay="0.26s")(src='images/tickers/FUN ticker.svg')
+        img#NEOTicker.wow.fadeIn.tickerShadow(data-wow-delay="0.2s")(src='images/tickers/NEO ticker.svg')
+        img#FUNTicker.wow.fadeIn(data-wow-delay="0.25s")(src='images/tickers/FUN ticker.svg')
 
         svg#smallRectangle(width="200px" height="80px")
           defs
