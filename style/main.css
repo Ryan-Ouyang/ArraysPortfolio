@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300");
+.body {
+  font-family: 'Raleway', sans-serif; }
+
 .landingheadimages {
   height: 100vh;
   width: 100vw;
@@ -116,78 +119,8 @@
   color: #ffffff;
   background-color: #FFA455; }
 
-.sectionOfCards {
-  margin-top: 8vh; }
-  .sectionOfCards .card {
-    width: 300px;
-    background-color: #fefefe;
-    height: 440px;
-    text-align: left;
-    border-radius: 2.7px;
-    -webkit-box-shadow: 0px 0px 45px 2px rgba(0, 0, 0, 0.35);
-    box-shadow: 0px 0px 45px 2px rgba(0, 0, 0, 0.35);
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 20px; }
-    .sectionOfCards .card img {
-      max-width: 50%;
-      margin-left: 25%;
-      margin-top: 10%;
-      padding-bottom: 10%;
-      max-height: 100%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      margin-bottom: -10px; }
-    .sectionOfCards .card hr {
-      width: 80%; }
-    .sectionOfCards .card h4 {
-      color: #464248;
-      padding-left: 10%; }
-    .sectionOfCards .card h5 {
-      color: #BCBCBF;
-      padding-left: 10%; }
-    .sectionOfCards .card p {
-      margin-left: 10%;
-      padding-right: 10%; }
-    .sectionOfCards .card .savingsSection {
-      background-color: #E6E6EA;
-      padding-top: 3%;
-      padding-bottom: 5.2%;
-      margin-top: 9%;
-      float: left;
-      width: 100%; }
-      .sectionOfCards .card .savingsSection .priceSaved {
-        width: 60%;
-        float: left;
-        padding-left: 5%; }
-        .sectionOfCards .card .savingsSection .priceSaved h2 {
-          padding-left: 10%;
-          color: #5A6FD9; }
-        .sectionOfCards .card .savingsSection .priceSaved p {
-          margin-top: -2.5%; }
-      .sectionOfCards .card .savingsSection .buttonSection {
-        width: 40%;
-        float: left;
-        padding-top: 10%;
-        padding-left: 10%; }
-        .sectionOfCards .card .savingsSection .buttonSection a {
-          border-radius: 50%;
-          padding-top: 22.5px;
-          padding-bottom: 15px;
-          padding-right: 11px;
-          padding-left: 13.5px;
-          background-color: #FAF9FE;
-          border: 1px solid #EDEDFB; }
-          .sectionOfCards .card .savingsSection .buttonSection a i {
-            font-size: 25px;
-            color: #4839E6;
-            padding-top: 5px;
-            padding-right: 5px; }
-        .sectionOfCards .card .savingsSection .buttonSection a:hover {
-          background-color: #4839e6;
-          border: 1px solid #4839e6; }
-          .sectionOfCards .card .savingsSection .buttonSection a:hover i {
-            color: #fefefe; }
+.middleSection {
+  position: relative; }
 
 .floatunder {
   margin-left: -30%;
@@ -293,72 +226,39 @@
   text-decoration: none;
   background-color: #665cd6; }
 
+.buttonContainer {
+  padding: none;
+  margin: 0; }
+
 #mainButton {
-  font-family: 'Roboto', sans-serif;
-  outline: none;
-  height: 40px;
-  text-align: center;
-  width: 130px;
-  border-radius: 50px;
-  background: #ffffff;
-  border: 2px solid #0F3CAA;
-  color: #0F3CAA;
-  letter-spacing: 1px;
-  text-shadow: 0;
-  font-size: 12px;
-  font-weight: bold;
-  -webkit-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s; }
-  #mainButton:hover {
-    color: white;
-    background: #3B95F3; }
-  #mainButton:active {
-    letter-spacing: 2px; }
-  #mainButton:after {
-    content: "Try it Yourself"; }
-
-.onclic {
-  width: 40px;
-  border-color: #bbb;
-  border-width: 3px;
-  font-size: 0;
-  border-left-color: #3B95F3;
-  -webkit-animation: rotating 2s 0.25s linear infinite;
-  animation: rotating 2s 0.25s linear infinite; }
-  .onclic:after {
-    content: ""; }
-  .onclic:hover {
-    color: #3B95F3;
-    background: white; }
-
-.validate {
-  font-size: 13px;
-  color: white;
-  background: #3B95F3; }
-  .validate:after {
-    font-family: 'FontAwesome';
-    content: "\f00c"; }
-
-@-webkit-keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+  margin-top: 10px; }
 
 #mainText {
   font-size: 50px; }
 
-@media screen and (max-width: 1250px) {
-  .sectionOfCards {
-    display: none; } }
+#mainSubtext {
+  color: #484C63; }
+
+#BTCTicker {
+  position: absolute;
+  top: -120px;
+  right: -670px;
+  height: 160px; }
+
+#ETHTicker {
+  position: absolute;
+  top: -50px;
+  right: -500px;
+  height: 160px; }
+
+#NEOTicker {
+  position: absolute;
+  top: 150px;
+  right: -380px;
+  height: 160px; }
+
+#FUNTicker {
+  position: absolute;
+  top: 200px;
+  right: -650px;
+  height: 160px; }

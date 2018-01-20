@@ -11,6 +11,8 @@ head
   link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
   link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css' rel='stylesheet')
   link(href='https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css' rel='stylesheet')
+  link(href='style/jelly.css', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet')
 body
   //Image background using undervalued z-index div. 
   .landingheadimages
@@ -42,39 +44,44 @@ body
         h1#mainText.wow.fadeIn(data-wow-delay="0.3s")
           | Make calls. 
           strong Make money.
-          //- | to 
-          //- strong out there.
-        //- form(method='POST' action='#').wow.fadeIn(data-wow-delay="0.5s")
-        //-   input#email.form-control(type='email', placeholder='Let us send you our pitch.' name='email')
-        //-   input#send(type="submit" value=">")
-        button#mainButton
-      .col-lg-5.sectionOfCards
-        .card.wow.fadeIn
-          img(src='images/logos/shopify2.svg')
-          hr
-          h4 Shopify
-          h5 Partner Developers Program
-          p Being part of the Shopify Partner Developers program, we're given a greater insight into the development of our clients sites. Through the program, we are able to provide swift solutions to our clients demands.
-          .savingsSection
-            .priceSaved
-              h2 $1710
-              p saved and counting.
-            .buttonSection
-              a(href='http://namecheap.com') 
-                i.fa.fa-paper-plane
-        .card.floatunder.wow.fadeIn(data-wow-delay="0.3s")
-          img(src='images/logos/namecheap.svg')
-          hr
-          h4 Namecheap
-          h5 Reseller Partner Program
-          p Forming partnerships with the largest domain and hosting providers in the world enables us to provide effective bundled pricing for our clients. 
-          .savingsSection
-            .priceSaved
-              h2 $1340
-              p saved and counting.
-            .buttonSection
-              a(href='http://shopify.com') 
-                i.fa.fa-paper-plane
+        h2#mainSubtext.wow.fadeIn(data-wow-delay="0.4s")
+          | This is some filler text that doesn't make sense!
+          .buttonContainer
+            button.bttn-jelly.bttn-md#mainButton Try it Yourself.
+
+        img#BTCTicker(src='images/tickers/BTC ticker.svg')
+        img#ETHTicker(src='images/tickers/ETH ticker.svg')
+        img#NEOTicker(src='images/tickers/NEO ticker.svg')
+        img#FUNTicker(src='images/tickers/FUN ticker.svg')
+
+      //- .col-lg-5.sectionOfCards
+      //-   .card.wow.fadeIn
+      //-     img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bitcoin_logo.svg/2000px-Bitcoin_logo.svg.png')
+      //-     hr
+      //-     h4 Bitcoin / USDT
+      //-     h5 Partner Developers Program
+      //-     //- p Being part of the Shopify Partner Developers program, we're given a greater insight into the development of our clients sites. Through the program, we are able to provide swift solutions to our clients demands.
+      //-     .savingsSection
+      //-       .priceSaved
+      //-         h2 $12537
+      //-         p saved and counting.
+      //-       .buttonSection
+      //-         a(href='http://namecheap.com') 
+      //-           i.fa.fa-paper-plane
+      //-   .card.floatunder.wow.fadeIn(data-wow-delay="0.3s")
+      //-     img(src='images/logos/namecheap.svg')
+      //-     hr
+      //-     h4 Namecheap
+      //-     h5 Reseller Partner Program
+      //-     p Forming partnerships with the largest domain and hosting providers in the world enables us to provide effective bundled pricing for our clients. 
+      //-     .savingsSection
+      //-       .priceSaved
+      //-         h2 $1340
+      //-         p saved and counting.
+      //-       .buttonSection
+      //-         a(href='http://shopify.com') 
+      //-           i.fa.fa-paper-plane
+
   .nextSection
     .imageSection
       img.leftHeaderRotatedImage(src='images/landingHeader/orangeleft.svg')
